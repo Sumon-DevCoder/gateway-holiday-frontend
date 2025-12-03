@@ -17,11 +17,9 @@ export const changePasswordSchema = z.object({
   oldPassword: z.string().nonempty({ message: "Old Password cannot be empty" }),
   newPassword: z.string().min(6, "Password must be at least 6 characters"),
 });
-// Define the schema
+// Define the schema for registration (matching backend requirements)
 export const signupSchema = z.object({
+  name: z.string().min(1, "Name is required").trim(),
+  email: z.string().email("Invalid email address").toLowerCase().trim(),
   password: z.string().min(6, "Password must be at least 6 characters"),
-  name: z.string().min(1, "Address is required"),
-  email: z.string().email("Invalid email address"),
-  phone: z.string(),
-  address: z.string().min(1, "Address is required"),
 });

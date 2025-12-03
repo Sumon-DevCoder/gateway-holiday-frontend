@@ -1,5 +1,6 @@
 "use client";
 
+import { LoginForm } from "@/components/auth/LoginForm";
 import CustomForm from "@/components/CustomFormComponents/CustomForm";
 import CustomInput from "@/components/CustomFormComponents/CustomInput";
 import CustomSelect from "@/components/CustomFormComponents/CustomSelect";
@@ -666,18 +667,18 @@ export const BookingSidebar: React.FC<BookingSidebarProps> = ({
 
   return (
     <>
-      {/* Google Login Modal */}
+      {/* Login Modal */}
       <Dialog open={isLoginModalOpen} onOpenChange={setIsLoginModalOpen}>
         <DialogContent className="max-w-md">
           <DialogHeader>
             <DialogTitle className="text-center text-2xl font-bold">
               Login Required
             </DialogTitle>
+            <p className="text-center text-sm text-gray-600">
+              Please login to continue
+            </p>
           </DialogHeader>
           <div className="py-6">
-            <p className="mb-6 text-center text-gray-600">
-              Please login with Google to continue
-            </p>
             <button
               onClick={handleGoogleLogin}
               className="flex w-full items-center justify-center gap-3 rounded-lg border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-700 shadow-md transition-all hover:bg-gray-50 hover:shadow-lg"
@@ -702,6 +703,19 @@ export const BookingSidebar: React.FC<BookingSidebarProps> = ({
               </svg>
               Continue with Google
             </button>
+
+            {/* Divider */}
+            <div className="relative my-6">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t border-gray-300" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-white px-2 text-gray-500">Or</span>
+              </div>
+            </div>
+
+            {/* Email/Password Login Form */}
+            <LoginForm onSuccess={() => setIsLoginModalOpen(false)} />
           </div>
         </DialogContent>
       </Dialog>
