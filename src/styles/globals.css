@@ -1,0 +1,517 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Gateway Holidays Travel Theme - Light Mode */
+  --background: oklch(0.99 0.005 247.858);
+  --foreground: oklch(0.15 0.05 264.695);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.05 264.695);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.05 264.695);
+
+  /* Primary: Vibrant Orange from logo (main CTA color) */
+  --primary: oklch(0.7 0.18 45);
+  --primary-foreground: oklch(0.98 0.005 247.858);
+
+  /* Secondary: Soft Blue from logo */
+  --secondary: oklch(0.95 0.02 220);
+  --secondary-foreground: oklch(0.2 0.05 264.695);
+
+  /* Muted: Light gray with subtle blue tint */
+  --muted: oklch(0.96 0.01 220);
+  --muted-foreground: oklch(0.5 0.05 257.417);
+
+  /* Accent: Bright Yellow from logo */
+  --accent: oklch(0.85 0.15 85);
+  --accent-foreground: oklch(0.15 0.05 264.695);
+
+  /* Destructive: Warm Red from logo */
+  --destructive: oklch(0.65 0.2 15);
+  --destructive-foreground: oklch(0.98 0.005 247.858);
+
+  /* Borders and inputs */
+  --border: oklch(0.92 0.02 220);
+  --input: oklch(0.92 0.02 220);
+  --ring: oklch(0.7 0.18 45);
+
+  /* Chart colors matching logo spectrum */
+  --chart-1: oklch(0.85 0.15 85); /* Yellow */
+  --chart-2: oklch(0.7 0.18 45); /* Orange */
+  --chart-3: oklch(0.65 0.2 15); /* Red */
+  --chart-4: oklch(0.6 0.15 140); /* Green */
+  --chart-5: oklch(0.7 0.12 220); /* Blue */
+
+  /* Sidebar */
+  --sidebar: oklch(0.98 0.01 220);
+  --sidebar-foreground: oklch(0.15 0.05 264.695);
+  --sidebar-primary: oklch(0.7 0.18 45);
+  --sidebar-primary-foreground: oklch(0.98 0.005 247.858);
+  --sidebar-accent: oklch(0.95 0.02 220);
+  --sidebar-accent-foreground: oklch(0.2 0.05 264.695);
+  --sidebar-border: oklch(0.92 0.02 220);
+  --sidebar-ring: oklch(0.7 0.18 45);
+}
+
+.dark {
+  /* Gateway Holidays Travel Theme - Dark Mode */
+  --background: oklch(0.08 0.02 264.695);
+  --foreground: oklch(0.95 0.01 247.858);
+  --card: oklch(0.12 0.03 264.695);
+  --card-foreground: oklch(0.95 0.01 247.858);
+  --popover: oklch(0.12 0.03 264.695);
+  --popover-foreground: oklch(0.95 0.01 247.858);
+
+  /* Primary: Brighter Orange for dark mode */
+  --primary: oklch(0.75 0.2 45);
+  --primary-foreground: oklch(0.08 0.02 264.695);
+
+  /* Secondary: Deeper Blue for dark mode */
+  --secondary: oklch(0.2 0.05 220);
+  --secondary-foreground: oklch(0.95 0.01 247.858);
+
+  /* Muted: Darker with blue tint */
+  --muted: oklch(0.15 0.03 220);
+  --muted-foreground: oklch(0.6 0.05 257.417);
+
+  /* Accent: Brighter Yellow for dark mode */
+  --accent: oklch(0.8 0.18 85);
+  --accent-foreground: oklch(0.08 0.02 264.695);
+
+  /* Destructive: Brighter Red for dark mode */
+  --destructive: oklch(0.7 0.22 15);
+  --destructive-foreground: oklch(0.95 0.01 247.858);
+
+  /* Borders and inputs */
+  --border: oklch(0.2 0.05 220);
+  --input: oklch(0.2 0.05 220);
+  --ring: oklch(0.75 0.2 45);
+
+  /* Chart colors - brighter for dark mode */
+  --chart-1: oklch(0.8 0.18 85); /* Yellow */
+  --chart-2: oklch(0.75 0.2 45); /* Orange */
+  --chart-3: oklch(0.7 0.22 15); /* Red */
+  --chart-4: oklch(0.65 0.18 140); /* Green */
+  --chart-5: oklch(0.75 0.15 220); /* Blue */
+
+  /* Sidebar */
+  --sidebar: oklch(0.1 0.02 264.695);
+  --sidebar-foreground: oklch(0.95 0.01 247.858);
+  --sidebar-primary: oklch(0.75 0.2 45);
+  --sidebar-primary-foreground: oklch(0.08 0.02 264.695);
+  --sidebar-accent: oklch(0.2 0.05 220);
+  --sidebar-accent-foreground: oklch(0.95 0.01 247.858);
+  --sidebar-border: oklch(0.2 0.05 220);
+  --sidebar-ring: oklch(0.75 0.2 45);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  /* Gateway Holidays Travel Theme Gradients */
+  .gradient-travel-primary {
+    background: linear-gradient(
+      135deg,
+      oklch(0.85 0.15 85) 0%,
+      /* Yellow */ oklch(0.7 0.18 45) 50%,
+      /* Orange */ oklch(0.65 0.2 15) 100% /* Red */
+    );
+  }
+
+  .gradient-travel-secondary {
+    background: linear-gradient(
+      135deg,
+      oklch(0.7 0.12 220) 0%,
+      /* Blue */ oklch(0.6 0.15 140) 50%,
+      /* Green */ oklch(0.7 0.18 45) 100% /* Orange */
+    );
+  }
+
+  .gradient-travel-rainbow {
+    background: linear-gradient(
+      135deg,
+      oklch(0.85 0.15 85) 0%,
+      /* Yellow */ oklch(0.7 0.18 45) 16.66%,
+      /* Orange */ oklch(0.65 0.2 15) 33.33%,
+      /* Red */ oklch(0.6 0.15 140) 50%,
+      /* Green */ oklch(0.7 0.12 220) 66.66%,
+      /* Blue */ oklch(0.7 0.15 280) 83.33%,
+      /* Purple */ oklch(0.8 0.12 320) 100% /* Pink */
+    );
+  }
+
+  .gradient-travel-sunset {
+    background: linear-gradient(
+      135deg,
+      oklch(0.85 0.15 85) 0%,
+      /* Yellow */ oklch(0.75 0.18 45) 30%,
+      /* Orange */ oklch(0.7 0.2 15) 60%,
+      /* Red */ oklch(0.6 0.15 280) 100% /* Purple */
+    );
+  }
+
+  .gradient-travel-ocean {
+    background: linear-gradient(
+      135deg,
+      oklch(0.7 0.12 220) 0%,
+      /* Blue */ oklch(0.6 0.15 140) 50%,
+      /* Green */ oklch(0.7 0.12 200) 100% /* Light Blue */
+    );
+  }
+
+  /* Text gradients */
+  .text-gradient-travel {
+    background: linear-gradient(
+      135deg,
+      oklch(0.7 0.18 45) 0%,
+      /* Orange */ oklch(0.65 0.2 15) 100% /* Red */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-rainbow {
+    background: linear-gradient(
+      135deg,
+      oklch(0.85 0.15 85) 0%,
+      /* Yellow */ oklch(0.7 0.18 45) 20%,
+      /* Orange */ oklch(0.65 0.2 15) 40%,
+      /* Red */ oklch(0.6 0.15 140) 60%,
+      /* Green */ oklch(0.7 0.12 220) 80%,
+      /* Blue */ oklch(0.7 0.15 280) 100% /* Purple */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Travel-themed shadows */
+  .shadow-travel {
+    box-shadow: 0 4px 20px oklch(0.7 0.18 45 / 0.15);
+  }
+
+  .shadow-travel-lg {
+    box-shadow: 0 10px 40px oklch(0.7 0.18 45 / 0.2);
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    transition:
+      transform 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px oklch(0.7 0.18 45 / 0.2);
+  }
+
+  /* Travel-themed borders */
+  .border-travel {
+    border: 2px solid oklch(0.7 0.18 45);
+  }
+
+  .border-travel-gradient {
+    border: 2px solid transparent;
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(
+          135deg,
+          oklch(0.85 0.15 85),
+          oklch(0.7 0.18 45),
+          oklch(0.65 0.2 15)
+        )
+        border-box;
+  }
+
+  /* Custom Animations */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+  }
+
+  @keyframes float-delayed {
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(-3deg);
+    }
+  }
+
+  @keyframes fly {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(calc(100vw + 100px));
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float-delayed 8s ease-in-out infinite;
+  }
+
+  .animate-fly {
+    animation: fly 20s linear infinite;
+  }
+
+  /* Font Script */
+  .font-script {
+    font-family: "Dancing Script", cursive;
+  }
+
+  /* Enhanced Animations */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-delayed {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-delayed-2 {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    66% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-delayed-3 {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    75% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  @keyframes bounce-gentle {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+
+  .animate-fade-in-delayed {
+    animation: fade-in-delayed 1.5s ease-out;
+  }
+
+  .animate-fade-in-delayed-2 {
+    animation: fade-in-delayed-2 2s ease-out;
+  }
+
+  .animate-fade-in-delayed-3 {
+    animation: fade-in-delayed-3 2.5s ease-out;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  .animate-bounce-gentle {
+    animation: bounce-gentle 3s ease-in-out infinite;
+  }
+
+  /* Enhanced hover effects */
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  .hover-rotate:hover {
+    transform: rotate(5deg);
+  }
+
+  /* Parallax effect */
+  .parallax {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Line clamp utilities */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+}
+
+/* Ensure dropdown appears above table */
+[data-radix-popper-content-wrapper] {
+  z-index: 100 !important;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu-content {
+  z-index: 100;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Table container to prevent overflow issues */
+.table-container {
+  position: relative;
+  overflow: visible !important;
+}

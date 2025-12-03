@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "countryName": { "bn": "অস্ট্রেলিয়া", "en": "Australia" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 4000,
+    "required_document": ""
+  },
+  {
+    "id": 2,
+    "countryName": { "bn": "কম্বোডিয়া", "en": "Cambodia" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 5000,
+    "required_document": ""
+  },
+  {
+    "id": 3,
+    "countryName": { "bn": "কানাডা", "en": "Canada" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 6999,
+    "required_document": ""
+  },
+  {
+    "id": 4,
+    "countryName": { "bn": "চায়না", "en": "China" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 8000,
+    "required_document": ""
+  },
+  {
+    "id": 5,
+    "countryName": { "bn": "মিসর", "en": "Egypt" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 4800,
+    "required_document": ""
+  },
+  {
+    "id": 6,
+    "countryName": { "bn": "ইথিওপিয়া", "en": "Ethiopia" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 5200,
+    "required_document": ""
+  },
+  {
+    "id": 7,
+    "countryName": { "bn": "ভারত", "en": "India" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 6000,
+    "required_document": ""
+  },
+  {
+    "id": 8,
+    "countryName": { "bn": "ইন্দোনেশিয়া", "en": "Indonesia" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 5800,
+    "required_document": ""
+  },
+  {
+    "id": 9,
+    "countryName": { "bn": "জাপান", "en": "Japan" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 6200,
+    "required_document": ""
+  },
+  {
+    "id": 10,
+    "countryName": { "bn": "কেনিয়া", "en": "Kenya" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 6999,
+    "required_document": ""
+  },
+  {
+    "id": 11,
+    "countryName": { "bn": "মালয়েশিয়া", "en": "Malaysia" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 4800,
+    "required_document": ""
+  },
+  {
+    "id": 12,
+    "countryName": { "bn": "মরিশাস", "en": "Mauritius" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 5200,
+    "required_document": ""
+  },
+  {
+    "id": 13,
+    "countryName": { "bn": "মরক্কো", "en": "Morocco" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 4000,
+    "required_document": ""
+  },
+  {
+    "id": 14,
+    "countryName": { "bn": "নেপাল", "en": "Nepal" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 5800,
+    "required_document": ""
+  },
+  {
+    "id": 15,
+    "countryName": { "bn": "নিউজিল্যান্ড", "en": "New Zealand" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 6200,
+    "required_document": ""
+  },
+  {
+    "id": 16,
+    "countryName": { "bn": "ফিলিপাইন", "en": "Philippines" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 6999,
+    "required_document": ""
+  },
+  {
+    "id": 17,
+    "countryName": { "bn": "রাশিয়া", "en": "Russia" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 8000,
+    "required_document": ""
+  },
+  {
+    "id": 18,
+    "countryName": { "bn": "সিঙ্গাপুর", "en": "Singapore" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 4800,
+    "required_document": ""
+  },
+  {
+    "id": 19,
+    "countryName": { "bn": "দক্ষিণ কোরিয়া", "en": "South Korea" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 5200,
+    "required_document": ""
+  },
+  {
+    "id": 20,
+    "countryName": { "bn": "শ্রীলঙ্কা", "en": "Sri Lanka" },
+    "visaTypes": [
+      { "category": { "bn": "ট্যুরিস্ট ভিসা", "en": "Tourist Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }, { "bn": "স্টিকার ভিসা", "en": "Sticker Visa" }] },
+      { "category": { "bn": "ব্যবসায়িক ভিসা", "en": "Business Visa" }, "processingTypes": [{ "bn": "ই-ভিসা", "en": "E-Visa" }] }
+    ],
+    "processingFee": 6000,
+    "required_document": ""
+  }
+]

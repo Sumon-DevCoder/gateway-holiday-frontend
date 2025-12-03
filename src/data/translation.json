@@ -1,0 +1,27 @@
+{
+  "visa": { "en": "Visa", "bn": "ভিসা" },
+  "visa_info": { "en": "Visa Information", "bn": "ভিসা তথ্য" },
+  "select_country": { "en": "Select a Country", "bn": "দেশ নির্বাচন করুন" },
+  "select_country_info": {
+    "en": "Choose a country from the list above to see visa details",
+    "bn": "ভিসা তথ্য দেখতে উপরে থেকে একটি দেশ নির্বাচন করুন"
+  },
+  "searching": { "en": "Searching...", "bn": "খোঁজা হচ্ছে..." },
+  "public_service": { "en": "Search", "bn": "জন সেবা" },
+  "please_select_country": {
+    "en": "Please select a country first",
+    "bn": "প্রথমে একটি দেশ নির্বাচন করুন"
+  },
+  "fetch_error": {
+    "en": "Failed to fetch country data. Please try again.",
+    "bn": "তথ্য আনতে ব্যর্থ হয়েছে। আবার চেষ্টা করুন।"
+  },
+  "official": { "en": "Official", "bn": "অফিসিয়াল" },
+  "country_name": { "en": "Country Name", "bn": "দেশের নাম" },
+  "capital": { "en": "Capital", "bn": "রাজধানী" },
+  "area": { "en": "Area", "bn": "আয়তন" },
+  "population": { "en": "Population", "bn": "জনসংখ্যা" },
+  "timezone": { "en": "Time Zone", "bn": "সময় অঞ্চল" },
+  "languages": { "en": "Languages", "bn": "প্রধান ভাষা" },
+  "currency": { "en": "Currency", "bn": "মুদ্রা" }
+}
