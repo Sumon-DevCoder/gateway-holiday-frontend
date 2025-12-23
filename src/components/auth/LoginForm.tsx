@@ -48,21 +48,21 @@ export function LoginForm({ onSuccess, redirectPath }: LoginFormProps) {
       // Admin credentials - update these with your actual admin credentials
       form.setValue(
         "email",
-        process.env.NEXT_PUBLIC_ADMIN_EMAIL || "admin@example.com"
+        process.env["NEXT_PUBLIC_ADMIN_EMAIL"] || "admin@example.com"
       );
       form.setValue(
         "password",
-        process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "admin123"
+        process.env["NEXT_PUBLIC_ADMIN_PASSWORD"] || "admin123"
       );
     } else {
       // User credentials - update these with your test user credentials
       form.setValue(
         "email",
-        process.env.NEXT_PUBLIC_USER_EMAIL || "user@example.com"
+        process.env["NEXT_PUBLIC_USER_EMAIL"] || "user@example.com"
       );
       form.setValue(
         "password",
-        process.env.NEXT_PUBLIC_USER_PASSWORD || "user@1234Strong"
+        process.env["NEXT_PUBLIC_USER_PASSWORD"] || "user@1234Strong"
       );
     }
   };
